@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "89f61ebc-793c-437e-a8b5-49060b5dc773",
+		"name": "Imotor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r \"PhoneNumber\" : \"0387490078\",\r\"DeviceID\" : \"hjgjhg\",\r\"Os\" : \"android\"\r}"
+				},
+				"url": {
+					"raw": "{{url}}api/Service/Login",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"Service",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AllMaterial",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"BikeID\":\"28B1-0009\",\r\n\t\"SearchKey\":\"\",\r\n\t\"Page\":\"2\"\r\n}"
+				},
+				"url": {
+					"raw": "http://45.118.144.19:1904/api/Service/GetPriceListMaterial",
+					"protocol": "http",
+					"host": [
+						"45",
+						"118",
+						"144",
+						"19"
+					],
+					"port": "1904",
+					"path": [
+						"api",
+						"Service",
+						"GetPriceListMaterial"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RecentMaterial",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"BikeID\":\"28B1-0009\",\r\n\t\"SearchKey\":\"\",\r\n\t\"Page\":\"2\"\r\n}"
+				},
+				"url": {
+					"raw": "http://45.118.144.19:1904/api/Service/GetPriceListMaterialFollow",
+					"protocol": "http",
+					"host": [
+						"45",
+						"118",
+						"144",
+						"19"
+					],
+					"port": "1904",
+					"path": [
+						"api",
+						"Service",
+						"GetPriceListMaterialFollow"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
