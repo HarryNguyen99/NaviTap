@@ -32,8 +32,6 @@ public class Login_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         init();
         login();
-
-
     }
 
     private void login() {
@@ -80,7 +78,6 @@ public class Login_Activity extends AppCompatActivity {
 
         }
     });
-
     }
 
     private void init() {
