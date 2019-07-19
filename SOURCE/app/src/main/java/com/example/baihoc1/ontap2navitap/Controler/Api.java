@@ -6,6 +6,6 @@ import retrofit2.http.Body;
 import retrofit2.http.POST;
 
 public interface Api {
-    @POST("/Service/Login")
+    @POST("Service/Login")
     Call<ResponseBody> getLogin(@Body Object object);
 }

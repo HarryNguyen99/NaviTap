@@ -51,7 +51,7 @@ public class Login_Activity extends AppCompatActivity {
                 @Override
                 public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                     try {
-                        String strJson =response.body().string();
+                        String strJson = response.body().string();
                         Gson gson = new Gson();
                         Login login = gson.fromJson(strJson, Login.class);
                         String phone = login.getLoginResultt().getPhone().toString();

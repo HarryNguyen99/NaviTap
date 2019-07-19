@@ -1,11 +1,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@mipmap/img_br_login">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@mipmap/img_br_login"/>
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -18,7 +16,7 @@
             android:src="@mipmap/img_logo"
             android:layout_centerHorizontal="true"
             android:layout_above="@id/edt_login"
-            android:layout_marginBottom="50dp"/>
+            android:layout_marginBottom="100dp"/>
 
 
         <EditText
