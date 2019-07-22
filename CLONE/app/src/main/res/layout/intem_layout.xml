@@ -2,44 +2,28 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="50dp"
-    android:orientation="horizontal"
-    android:layout_weight="2">
+    android:layout_weight="2"
+    android:orientation="horizontal">
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/tv_ten_phu_tung"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:text="Tên Phụ Tùng"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold"
         android:layout_weight="1"
-        android:layout_marginLeft="5dp">
-        <TextView
-            android:id="@+id/tv_ten_phu_tung"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Tên Phụ Tùng"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#000"/>
-
-        <TextView
-            android:id="@+id/tv_sokm"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Số km"
-            android:textSize="18sp"
-            android:textColor="#000"/>
-    </LinearLayout>
+        android:layout_gravity="center" />
 
     <TextView
         android:id="@+id/tv_gia"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="500.000"
-        android:textSize="20sp"
         android:layout_gravity="center_vertical"
-        android:gravity="center_horizontal"/>
-
-
-
+        android:gravity="center_horizontal"
+        android:text="500.000"
+        android:textSize="18sp" />
 
 
 </LinearLayout>

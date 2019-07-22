@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.baihoc1.imoto.R;
 
@@ -14,6 +15,9 @@ import com.example.baihoc1.imoto.R;
  * A simple {@link Fragment} subclass.
  */
 public class AllMaterial_Fragment extends Fragment {
+
+    View vRoot;
+    RecyclerView rvAllMaterial;
 
 
     public AllMaterial_Fragment() {
@@ -25,7 +29,32 @@ public class AllMaterial_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_all_material, container, false);
+        vRoot = inflater.inflate(R.layout.fragment_all_material, container, false);
+        init();
+        allMaterial ();
+        return vRoot;
+    }
+
+    private void allMaterial() {
+
+
+    }
+
+    private void init() {
+
+        rvAllMaterial = vRoot.findViewById(R.id.rv_all_material);
+
+        class GetAllMaterial {
+            String bikeId, SearchKey, Page;
+
+            public GetAllMaterial (String bikeId, String searchKey, String page){
+                this.bikeId = bikeId;
+                SearchKey = searchKey;
+                Page = page;
+            }
+
+        }
+
     }
 
 }

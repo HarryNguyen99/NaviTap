@@ -3,6 +3,7 @@ package com.example.baihoc1.imoto.Controler;
 import android.os.Bundle;
 
 import com.example.baihoc1.imoto.Controler.Adapter.ViewPagerServiceAdapter;
+import com.example.baihoc1.imoto.Controler.Util.AppConfig;
 import com.example.baihoc1.imoto.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -25,6 +26,7 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import android.view.Menu;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -67,6 +69,19 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void setDataNavigation() {
+
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        View headerView = navigationView.getHeaderView(0);
+        TextView tenUser = (TextView) headerView.findViewById(R.id.tv_ten_user);
+        TextView phoneUser = (TextView) headerView.findViewById(R.id.tv_sdt);
+        TextView biensoUser = (TextView) headerView.findViewById(R.id.tv_bien_so);
+        //---
+        String strPhoneUser = AppConfig.getPhoneNumber(MainActivity.this);
+        String strTenUser = AppConfig.getTenUser(MainActivity.this);
+        String strBiensoUser = AppConfig.getBiensoUser(MainActivity.this);
+        tenUser.setText(strTenUser);
+        phoneUser.setText(strPhoneUser);
+        biensoUser.setText(strBiensoUser);
 
 
     }
